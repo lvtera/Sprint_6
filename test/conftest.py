@@ -8,7 +8,7 @@ from locators.main_page_locators import MainPageLocators
 def driver():
     firefox_options = webdriver.FirefoxOptions()
     firefox_options.add_argument('--headless')
-    firefox_options.add_argument('--window-size=1280,800')
+    firefox_options.add_argument('--window-size=1280,720')
     driver = webdriver.Firefox(options=firefox_options)
     driver.get(Urls.MAIN_PAGE_URL)
     driver.find_element(*MainPageLocators.ALLOW_COOKIE_BUTTON).click()
